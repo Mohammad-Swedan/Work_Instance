@@ -85,7 +85,7 @@ namespace API_Layer.Controllers
         [HttpPost]
         [Route("Upload")]
         public async Task<IActionResult> Upload(IFormFile file)
-        {//
+        {
             try
             {
                 await _imageService.SaveImageAsync(file);
